@@ -1,0 +1,139 @@
+.footerContainer {
+  margin-top: 32vh;
+  padding: 2vh;
+  /* background: linear-gradient(to right, rgb(177, 32, 32),#8F8888); */
+  background-color: rgb(191, 49, 49);
+  color: black;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftFooter {
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+
+.leftFooter > h4 {
+  font-family: "Roboto";
+  font-size: 3vh;
+  padding-bottom: 30px;
+  /* border-bottom: 2px solid black; */
+  text-align: left;
+  color: white
+}
+
+.leftFooter > .quickLink {
+  text-decoration: none;
+  font-size: 2vh;
+  font-family: "Roboto";
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vh;
+  width: 150px;
+  
+}
+
+.leftFooter > .quickLink:hover {
+  color: black;
+}
+
+.midFooter {
+  width: 100%;
+  text-align: center;
+  flex: 4;
+
+}
+
+.midFooter > h3 {
+  font-size: 6vh;
+  font-family: "Roboto";
+  color: white;
+  margin-bottom: 18 px;
+}
+
+.midFooter > h3 {
+  font-size: 3vh;
+  font-family: "Roboto";
+  color: white;
+}
+
+.midFooter > p {
+  font-family: "Roboto";
+  margin: 1vh auto;
+  width: 600px;
+  color: white
+
+}
+
+.midFooter > .copy {
+  font-family: "Roboto";
+  margin: 1vh auto;
+  color: white;
+}
+
+.rightFooter {
+  display: flex;
+  flex-direction: column;
+  color: white
+}
+
+.rightFooter > h4 {
+  font-family: "Roboto";
+  font-size: 3vh;
+  padding-bottom: 30px;
+  /* border-bottom: 2px solid black; */
+  text-align: left;
+}
+
+.rightFooter > a {
+  text-decoration: none;
+  font-size: 2vh;
+  font-family: "Roboto";
+  color: white;
+  transition: all 0.5s;
+  margin: 0.5vh;
+  width: 150px;
+}
+
+.rightFooter > a:hover {
+  color: black;
+}
+
+.youtubeSvgIcon {
+  color: white;
+}
+
+.instagramSvgIcon {
+  color: white;
+}
+
+.facebookSvgIcon {
+  color: white;
+}
+
+.twitterSvgIcon {
+  color: white;
+}
+.copy > p{
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    display: grid;
+  }
+  .leftFooter {
+    order: 2;
+    padding: 2vmax;
+  }
+  .midFooter {
+    order: 1;
+    padding: 2vmax;
+  }
+  .rightFooter {
+    order: 3;
+    padding: 2vmax;
+  }
+}
